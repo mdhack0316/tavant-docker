@@ -1,0 +1,10 @@
+version: '3.6'
+services: 
+        myservice: 
+                image: mdhack/myserver
+                container_name:   myfirstcont
+
+          
+        nginx: 
+                image: nginx
+                container_name: test

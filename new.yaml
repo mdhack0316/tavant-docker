@@ -1,0 +1,17 @@
+version: '3.6'
+services: 
+        lastservice: 
+                image: lastimage
+                build: 
+                        context: . 
+                        dockerfile: mayankfile
+                container_name: webapp2
+                ports: 
+                - 4345:80 
+                volumes: 
+                - newvolume:/var/www/html/
+
+volumes: 
+        newvolume:
+
+          
